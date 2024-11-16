@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G.V.H.S Cherpulassery</title>
+    <link rel="stylesheet" href="./style.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="text-xl font-bold">G.V.H.S Cherpulassery</div>
+          <div class="md:hidden">
+            <button id="menu-toggle" class="p-2">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-blue-600 transition-colors duration-300">Home</a>
+            <a href="#about" class="hover:text-blue-600 transition-colors duration-300">About</a>
+            <a href="#academics" class="hover:text-blue-600 transition-colors duration-300">Academics</a>
+            <a href="#facilities" class="hover:text-blue-600 transition-colors duration-300">Facilities</a>
+            <a href="#contact" class="hover:text-blue-600 transition-colors duration-300">Contact</a>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <a href="#home" class="block py-2 hover:text-blue-600 transition-colors duration-300">Home</a>
+          <a href="#about" class="block py-2 hover:text-blue-600 transition-colors duration-300">About</a>
+          <a href="#academics" class="block py-2 hover:text-blue-600 transition-colors duration-300">Academics</a>
+          <a href="#facilities" class="block py-2 hover:text-blue-600 transition-colors duration-300">Facilities</a>
+          <a href="#contact" class="block py-2 hover:text-blue-600 transition-colors duration-300">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20">
+      <div class="container mx-auto px-4">
+        <div class="relative h-[600px] overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-700 opacity-80"></div>
+          <div class="relative z-10 flex flex-col items-center justify-center h-full text-white animate-fade-in">
+            <h1 class="text-5xl font-bold mb-4 animate-slide-up">Welcome to G.V.H.S Cherpulassery</h1>
+            <p class="text-xl text-center max-w-2xl animate-slide-up" style="animation-delay: 200ms">Nurturing minds, building futures - A legacy of excellence in education since 1948.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="rounded-lg overflow-hidden shadow-lg hover-scale animate-slide-up">
+            <img src="gandhi-statue.jpg" alt="Gandhi Statue" class="w-full h-64 object-cover">
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg hover-scale animate-slide-up" style="animation-delay: 100ms">
+            <img src="tree.jpg" alt="School Tree" class="w-full h-64 object-cover">
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg hover-scale animate-slide-up" style="animation-delay: 200ms">
+            <img src="wall-of-peace.jpg" alt="Wall of Peace" class="w-full h-64 object-cover">
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg hover-scale animate-slide-up" style="animation-delay: 300ms">
+            <img src="campus.jpg" alt="Campus View" class="w-full h-64 object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 animate-slide-up">About Us</h2>
+
+        <!-- History -->
+        <div class="mb-12 animate-slide-up">
+          <h3 class="text-2xl font-semibold mb-4">Our History</h3>
+          <p class="text-gray-600">
+              Established in 1913, Government Vocational Higher Secondary School, Cherpulassery is a premier educational institution in Palakkad district. The school has an important role in the history of Cherpulassery. This school is spread over 13 acres.
+
+
+            </p>
+        </div>
+
+        <!-- Vision and Mission -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold mb-4 animate-slide-up">Vision & Mission</h3>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up">
+              <h4 class="text-xl font-semibold mb-2">Vision</h4>
+              <p class="text-gray-600">To foster an inclusive, safe and nurturing environment for all children and adolescents, ensuring their holistic development and well-being. Our commitment is to protect their rights, provide quality education, healthcare and support systems that empower them to thrive and contribute positively to society.
+              </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up" style="animation-delay: 100ms">
+              <h4 class="text-xl font-semibold mb-2">Mission</h4>
+              <p class="text-gray-600">Our mission is to ensure quality education for all children and adolescents,providing a safe and inclusive environment that fosters holistic development. We are dedicated to supporting children from disadvantage background, promoting their health, well-being and social skills, and empowering them to become productive members of society. Through collaboration with local communities and leveraging available resources, we strive to an equitable educational system that prepare students for a succesful future.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Numbers -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up">
+            <h4 class="text-4xl font-bold text-blue-600">1200+</h4>
+            <p class="text-gray-600">Current Students</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up" style="animation-delay: 100ms">
+            <h4 class="text-4xl font-bold text-blue-600">80+</h4>
+            <p class="text-gray-600">Faculty Members</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up" style="animation-delay: 200ms">
+            <h4 class="text-4xl font-bold text-blue-600">10000+</h4>
+            <p class="text-gray-600">Alumni Network</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 animate-slide-up">Academics</h2>
+
+        <!-- Courses -->
+        <div class="mb-12">
+          <h3 class="text-2xl font-semibold mb-6 animate-slide-up">Courses Offered</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up">
+              <h4 class="text-xl font-semibold mb-4">Higher Secondary</h4>
+              <ul class="list-disc list-inside text-gray-600">
+                <li>Science (Computer/Biology)</li>
+                <li>Commerce</li>
+                <li>Humanities</li>
+              </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up" style="animation-delay: 100ms">
+              <h4 class="text-xl font-semibold mb-4">VHSE</h4>
+              <ul class="list-disc list-inside text-gray-600">
+                <li>MCT</li>
+                <li>Other Vocational Courses</li>
+              </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up" style="animation-delay: 200ms">
+              <h4 class="text-xl font-semibold mb-4">High School</h4>
+              <ul class="list-disc list-inside text-gray-600">
+                <li>English Medium</li>
+                <li>Malayalam Medium</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 animate-slide-up">Our Facilities</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up">
+            <h3 class="text-xl font-semibold mb-4">Academic Facilities</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>Modern Classrooms</li>
+              <li>Science Labs</li>
+              <li>Computer Lab</li>
+              <li>Library</li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up" style="animation-delay: 100ms">
+            <h3 class="text-xl font-semibold mb-4">Sports Facilities</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>Football Ground</li>
+              <li>Indoor Sports Arena</li>
+              <li>Fitness Center</li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover-scale animate-slide-up" style="animation-delay: 200ms">
+            <h3 class="text-xl font-semibold mb-4">Other Amenities</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>Shalabodyanam</li>
+              <li>Manthop</li>
+              <li>Chembakam</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12 animate-slide-up">Contact Us</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="animate-slide-up">
+            <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+            <form class="space-y-4">
+              <div>
+                <label class="block text-gray-700 mb-2">Name</label>
+                <input type="text" class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2">Email</label>
+                <input type="email" class="w-full p-2 border rounded focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2">Message</label>
+                <textarea class="w-full p-2 border rounded h-32 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"></textarea>
+              </div>
+              <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">Send Message</button>
+            </form>
+          </div>
+          <div class="animate-slide-up" style="animation-delay: 100ms">
+            <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+            <div class="space-y-4 text-gray-600">
+              <p>Address: G.V.H.S Cherpulassery, Kerala</p>
+              <p>Phone: +91 XXX XXX XXXX</p>
+              <p>Email: info@gvhscherpulassery.edu.in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="animate-fade-in">
+            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="#home" class="hover:text-blue-400 transition-colors duration-300">Home</a></li>
+              <li><a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a></li>
+              <li><a href="#academics" class="hover:text-blue-400 transition-colors duration-300">Academics</a></li>
+              <li><a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a></li>
+            </ul>
+          </div>
+          <div class="animate-fade-in" style="animation-delay: 100ms">
+            <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="hover:text-blue-400 transition-colors duration-300">Facebook</a>
+              <a href="#" class="hover:text-blue-400 transition-colors duration-300">Twitter</a>
+              <a href="#" class="hover:text-blue-400 transition-colors duration-300">Instagram</a>
+            </div>
+          </div>
+          <div class="animate-fade-in" style="animation-delay: 200ms">
+            <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+            <form class="flex">
+              <input type="email" placeholder="Enter your email" class="p-2 rounded-l focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 text-gray-800">
+              <button class="bg-blue-600 px-4 rounded-r hover:bg-blue-700 transition-colors duration-300">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="text-center mt-8 pt-8 border-t border-gray-700">
+          <p>&copy; 2024 G.V.H.S Cherpulassery. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
