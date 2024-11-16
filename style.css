@@ -3,42 +3,44 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 @layer components {
-  .animate-slide-up {
-    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
-  }
+    .animate-slide-up {
+        @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+    }
 
-  .animate-slide-up.in-view {
-    @apply opacity-100 translate-y-0;
-  }
+    .animate-slide-up.in-view {
+        @apply opacity-100 translate-y-0;
+    }
 
-  .animate-fade-in {
-    @apply opacity-0 transition-opacity duration-700 ease-out;
-  }
+    .animate-fade-in {
+        @apply opacity-0 transition-opacity duration-700 ease-out;
+    }
 
-  .animate-fade-in.in-view {
-    @apply opacity-100;
-  }
+    .animate-fade-in.in-view {
+        @apply opacity-100;
+    }
 
-  .hover-scale {
-    @apply transition-transform duration-300 hover:scale-105;
-  }
+    .hover-scale {
+        @apply transition-transform duration-300 hover:scale-105;
+    }
 }
 
 @media (max-width: 768px) {
     #contact .md\:grid-cols-2 {
         grid-template-columns: 1fr;
     }
+
     #contact .md\:order-1 {
         order: 2;
     }
+
     #contact .md\:order-2 {
         order: 1;
     }
@@ -69,4 +71,16 @@ body {
 
 .animation-delay-4000 {
     animation-delay: 4s;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
