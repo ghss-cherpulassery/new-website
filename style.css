@@ -31,3 +31,15 @@ body {
     @apply transition-transform duration-300 hover:scale-105;
   }
 }
+
+@media (max-width: 768px) {
+    #contact .md\:grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+    #contact .md\:order-1 {
+        order: 2;
+    }
+    #contact .md\:order-2 {
+        order: 1;
+    }
+}
