@@ -1,77 +1,68 @@
 // Intersection Observer for animations
 const observerOptions = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.1
+    root: null, rootMargin: '0px', threshold: 0.1
 };
 
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in-view');
-    }
-  });
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+        }
+    });
 }, observerOptions);
 
 // Observe all elements with animation classes
 document.addEventListener('DOMContentLoaded', () => {
-  const animatedElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
-  animatedElements.forEach(el => observer.observe(el));
+    const animatedElements = document.querySelectorAll('.animate-slide-up, .animate-fade-in');
+    animatedElements.forEach(el => observer.observe(el));
 
-  // Mobile menu toggle
-  const menuButton = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
+    // Mobile menu toggle
+    const menuButton = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-  menuButton?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('hidden');
-  });
+    menuButton?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('hidden');
+    });
 });
 
 const galleryData = {
-    "images": [
-        {
-            "id": 1,
-            "title": "School Building",
-            "description": "Main entrance of our school",
-            "thumbnail": "images/hero.jpeg",
-            "fullImage": "images/hero.jpeg"
-        },
-        {
-            "id": 2,
-            "title": "Science Lab",
-            "description": "Students working in the science laboratory",
-            "thumbnail": "images/hero.jpeg",
-            "fullImage": "images/hero.jpeg"
-        },
-        {
-            "id": 3,
-            "title": "Sports Day",
-            "description": "Annual sports day celebration",
-            "thumbnail": "images/hero.jpeg",
-            "fullImage": "images/hero.jpeg"
-        },
-        {
-            "id": 4,
-            "title": "Cultural Festival",
-            "description": "Students performing at the annual day",
-            "thumbnail": "images/hero.jpeg",
-            "fullImage": "images/hero.jpeg"
-        },
-        {
-            "id": 5,
-            "title": "Library",
-            "description": "Our well-stocked library",
-            "thumbnail": "images/hero.jpeg",
-            "fullImage": "images/hero.jpeg"
-        },
-        {
-            "id": 6,
-            "title": "Computer Lab",
-            "description": "Modern computer laboratory",
-            "thumbnail": "images/hero.jpeg",
-            "fullImage": "images/hero.jpeg"
-        }
-    ]
+    "images": [{
+        "id": 1,
+        "title": "School Building",
+        "description": "Main entrance of our school",
+        "thumbnail": "images/hero.jpeg",
+        "fullImage": "images/hero.jpeg"
+    }, {
+        "id": 2,
+        "title": "Science Lab",
+        "description": "Students working in the science laboratory",
+        "thumbnail": "images/hero.jpeg",
+        "fullImage": "images/hero.jpeg"
+    }, {
+        "id": 3,
+        "title": "Sports Day",
+        "description": "Annual sports day celebration",
+        "thumbnail": "images/hero.jpeg",
+        "fullImage": "images/hero.jpeg"
+    }, {
+        "id": 4,
+        "title": "Cultural Festival",
+        "description": "Students performing at the annual day",
+        "thumbnail": "images/hero.jpeg",
+        "fullImage": "images/hero.jpeg"
+    }, {
+        "id": 5,
+        "title": "Library",
+        "description": "Our well-stocked library",
+        "thumbnail": "images/hero.jpeg",
+        "fullImage": "images/hero.jpeg"
+    }, {
+        "id": 6,
+        "title": "Computer Lab",
+        "description": "Modern computer laboratory",
+        "thumbnail": "images/hero.jpeg",
+        "fullImage": "images/hero.jpeg"
+    }]
 };
 
 // Function to load gallery images
@@ -104,3 +95,60 @@ function loadGallery() {
 
 // Load gallery when page loads
 document.addEventListener('DOMContentLoaded', loadGallery);
+
+
+// Developer data
+const developers = [{
+    name: 'Sunith VS',
+    role: 'Lead Developer',
+    linkedin: 'https://www.linkedin.com/in/sunithvs',
+    github: 'https://github.com/sunithvs'
+}
+    // Add more developers as needed
+];
+
+// Style variables
+const styles = {
+    header: ['background: linear-gradient(to right, #3b82f6, #2563eb)', 'color: white', 'font-size: 20px', 'font-weight: bold', 'padding: 10px 20px', 'border-radius: 5px', 'text-align: center'].join(';'),
+
+    subHeader: ['color: #2563eb', 'font-size: 16px', 'font-weight: bold', 'padding: 5px 0'].join(';'),
+
+    devName: ['color: #059669', 'font-size: 14px', 'font-weight: bold', 'padding: 2px 0'].join(';'),
+
+    role: ['color: #6b7280', 'font-size: 12px', 'font-style: italic'].join(';'),
+
+    link: ['color: #3b82f6', 'font-size: 12px', 'text-decoration: underline'].join(';'),
+
+    divider: ['color: #d1d5db', 'font-size: 12px'].join(';'),
+
+    footer: ['color: #6b7280', 'font-size: 11px', 'font-style: italic', 'text-align: center'].join(';')
+};
+
+// Create divider line
+const divider = '═'.repeat(60);
+
+// Console log messages
+console.log('%c👨‍💻 Development Team 👩‍💻', styles.header);
+console.log('%c' + divider, styles.divider);
+
+// Log each developer's information
+developers.forEach((dev, index) => {
+    console.log(`%cDeveloper ${index + 1}:`, styles.subHeader);
+    console.log('%c' + dev.name, styles.devName);
+    console.log('%c' + dev.role, styles.role);
+    if (dev.linkedin) {
+        console.log('%cLinkedIn: %c' + dev.linkedin, 'color: #6b7280; font-size: 12px;', styles.link);
+    }
+
+    if (dev.github) {
+        console.log('%cGitHub: %c' + dev.github, 'color: #6b7280; font-size: 12px;', styles.link);
+    }
+    console.log('%c' + divider, styles.divider);
+});
+
+// Footer
+console.log('%c© ' + new Date().getFullYear() + ' G.V.H.S Cherpulassery. All rights reserved.', styles.footer);
+console.log('%cMade with ❤️ in Kerala, India', styles.footer);
+
+// Easter egg message
+console.log('%cHey there, curious developer! 👋', ['color: #059669', 'font-size: 14px', 'font-weight: bold', 'padding: 20px 0 0 0'].join(';'));
