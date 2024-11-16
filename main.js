@@ -103,7 +103,11 @@ const developers = [{
     role: 'Lead Developer',
     linkedin: 'https://www.linkedin.com/in/sunithvs',
     github: 'https://github.com/sunithvs'
-}
+},
+    {
+        name: "Rajalakshmi",
+        role: "Student Coordinator"
+    }
     // Add more developers as needed
 ];
 
