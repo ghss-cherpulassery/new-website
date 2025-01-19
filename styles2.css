@@ -1,0 +1,162 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/pattern666.svg);
+    color: white;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+/* Moving banner with continuous scroll */
+.banner-container {
+    overflow: hidden;
+    position: relative;
+    background: yellow;
+    padding: 15px 0;
+    border: 2px solid black;
+    transform: rotate(-3deg); /* Tilt effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+    display: flex;
+    white-space: nowrap;
+    /* animation: scroll 20s linear infinite;  */
+}
+
+.banner p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    /* padding-left: 100%; */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Randomly tilted images */
+.random-images {
+    position: relative;
+    height: 500px;
+}
+
+.random-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    transform: rotate(calc(-15deg + 30deg * random())); /* Random tilt */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: float 5s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+/* Specific image positions */
+.random:nth-child(1) {
+    top: 50px;
+    left: 10%;
+    transform: rotate(-10deg);
+}
+
+.random:nth-child(2) {
+    top: 200px;
+    left: 25%;
+    transform: rotate(15deg);
+}
+
+.random:nth-child(3) {
+    top: 100px;
+    left: 40%;
+    transform: rotate(-20deg);
+}
+
+.random:nth-child(4) {
+    top: 300px;
+    left: 60%;
+    transform: rotate(10deg);
+}
+
+.random:nth-child(5) {
+    top: 150px;
+    left: 75%;
+    transform: rotate(-5deg);
+}
+
+.random:nth-child(6) {
+    top: 250px;
+    left: 85%;
+    transform: rotate(5deg);
+}
+.random:nth-child(7) {
+    top: 500px;
+    left: 65%;
+    bottom: 15px;
+    transform: rotate(5deg);
+}
+.random:nth-child(8) {
+    top: 350px;
+    left: 5%;
+    transform: rotate(5deg);
+}
+.random:nth-child(9) {
+    top: 420px;
+    left: 25%;
+    transform: rotate(5deg);
+}
+.random:nth-child(10) {
+    top: 420px;
+    right: 10%;
+    transform: rotate(5deg);
+}
+.random:nth-child(11) {
+    top: 100px;
+    right: 35%;
+    transform: rotate(5deg);
+}
+
+/* Floating animation for images */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(calc(-15deg + 30deg * random()));
+    }
+    50% {
+        transform: translateY(-10px) rotate(calc(-10deg + 20deg * random()));
+    }
+}
+
+/* Hover effect to tilt images more */
+.random-images img:hover {
+    transform: translateY(-5px);
+}
+
+/* Launch button */
+.button-container {
+    margin-top: 50px;
+}
+
+.launch-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.launch-button:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(45deg, #0056b3, #003f80);
+}
