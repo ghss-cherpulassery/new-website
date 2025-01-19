@@ -144,6 +144,18 @@ body {
     margin-top: 50px;
 }
 
+.lll{
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    bottom: 35%;
+}
+
 .launch-button {
     padding: 15px 30px;
     font-size: 1.2rem;
@@ -154,9 +166,41 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    bottom: 5%;
 }
 
 .launch-button:hover {
     transform: translateY(-5px);
     background: linear-gradient(45deg, #0056b3, #003f80);
 }
+
+/* Loading screen styles */
+.loading-screen {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-gif {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Maintain aspect ratio */
+    max-width: 500px;
+    border-radius: 50%; /* Optional: Set a maximum width if needed */
+}
+
+/* @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+

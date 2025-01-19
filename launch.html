@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <!-- Moving banner with continuous scroll -->
+    
     <div class="banner-container">
         <div class="banner">
             <p>
@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <!-- Randomly tilted images -->
+    
     <div class="content">
         <div class="random-images">
             <img src="./images/hero.jpeg" alt="Image 1" class="random">
@@ -36,13 +36,24 @@
     </div>
 
     <!-- Redirect button -->
+    <div class="new">
+        <button class="lll">G.V.H.S Cherpulassery</button>
+    </div>
     <div class="button-container">
-        <button class="launch-button" onclick="redirect()">Visit us</button>
+        <button class="launch-button" onclick="showLoading()">Launch</button>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <img src="./images/launching-animation.gif" alt="Loading..." class="loading-gif">
     </div>
 
     <script>
-        function redirect() {
-            window.location.href = "index.html";
+        function showLoading() {
+            document.getElementById("loading-screen").style.display = "flex";
+            setTimeout(function() {
+                window.location.href = "index.html";
+            }, 4000);
         }
     </script>
 </body>
