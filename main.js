@@ -30,38 +30,38 @@ const galleryData = {
         "id": 1,
         "title": "School Building",
         "description": "Main entrance of our school",
-        "thumbnail": "images/hero.jpeg",
+        "thumbnail": "./images/second last.jpg",
         "fullImage": "images/hero.jpeg"
     }, {
         "id": 2,
         "title": "Science Lab",
         "description": "Students working in the science laboratory",
-        "thumbnail": "images/hero.jpeg",
-        "fullImage": "images/hero.jpeg"
+        "thumbnail": "./images/chemistrylab.jpg",
+        "fullImage": "./images/chemistrylab.jpg"
     }, {
         "id": 3,
         "title": "Sports Day",
         "description": "Annual sports day celebration",
-        "thumbnail": "images/hero.jpeg",
-        "fullImage": "images/hero.jpeg"
+        "thumbnail": "./images/sportsday.jpg",
+        "fullImage": "./images/sportsday.jpg"
     }, {
         "id": 4,
         "title": "Cultural Festival",
         "description": "Students performing at the annual day",
-        "thumbnail": "images/hero.jpeg",
-        "fullImage": "images/hero.jpeg"
+        "thumbnail": "./images/culturalfest.jpg",
+        "fullImage": "./images/culturalfest.jpg"
     }, {
         "id": 5,
         "title": "Library",
         "description": "Our well-stocked library",
-        "thumbnail": "images/hero.jpeg",
-        "fullImage": "images/hero.jpeg"
+        "thumbnail": "/images/library.jpg",
+        "fullImage": "./images/library.jpg"
     }, {
         "id": 6,
         "title": "Computer Lab",
         "description": "Modern computer laboratory",
-        "thumbnail": "images/hero.jpeg",
-        "fullImage": "images/hero.jpeg"
+        "thumbnail": "./images/computerlab.jpg",
+        "fullImage": "./images/computerlab.jpg"
     }]
 };
 
